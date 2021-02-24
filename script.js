@@ -42,6 +42,10 @@ const render = () => {
     canvas.width,
     canvas.height
   );
+
+	if (gamePlaying) {
+
+	} else {
 	// Img bird & animation 
   ctx.drawImage(
     img,
@@ -58,7 +62,8 @@ const render = () => {
 	ctx.fillText(`Meilleur score : ${bestScore}`, 55 , 245);
 	ctx.fillText('Cliquez pour jouer', 48, 535);
 	ctx.font = "bold 30px courier";
-
+	}
   window.requestAnimationFrame(render);
 };
 img.onload = render;
+document.addEventListener('click', () => gamePlaying = true );
