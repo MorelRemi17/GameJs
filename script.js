@@ -105,7 +105,7 @@ const render = () => {
         currentScore++;
         bestScore=Math.max(bestScore, currentScore);
         // setting pipes renew
-
+        pipes = [...pipes.slice(1), [pipes[pipes.length-1][0] + pipeGap + pipeWidth, pipeLoc()]];
       }
     })
   }
