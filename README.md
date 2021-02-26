@@ -16,4 +16,3 @@ Et des médias ( *img* ) pour le coté visuel du jeu.
 
 - canvas 
 - getContext
-- 
