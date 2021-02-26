@@ -42,8 +42,6 @@ const render = () => {
   // make the pipe and bird moving
   index++;
 
-  // ctx.clearRect(0, 0, canvas.width, canvas.height);
-
   // background first part
   ctx.drawImage(
     img,
@@ -151,7 +149,7 @@ const render = () => {
       ...size
     );
     flyHeight = canvas.height / 2 - size[1] / 2;
-    // text 
+    // text
     ctx.fillText(`Best score : ${bestScore}`, 85, 245);
     ctx.fillText("Click to play", 90, 535);
     ctx.font = "bold 30px courier";
